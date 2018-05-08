@@ -9,4 +9,6 @@ assert.deepEqual(replaceAt('$ is my name', 0, 'Coding'), 'Coding is my name');
 
 assert.deepEqual(replaceAt('Bet you can\'t finish this $', 26, 'sentence'), 'Bet you can\'t finish this sentence');
 
+assert.deepEqual(replaceAt('Erase me!', 5, 'd the string', {inline: true}), 'Erased the string');
+
 console.log('All test cases passed');
